@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avatars 과제</title>
+  <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
+  <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+  <link rel="preload" as="font"
+    href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css">
+  <link rel="stylesheet" href="./styles/avatars.css" />
+</head>
+
+
+
+<body>
+  <!--구현 하고자 하는 데이터는 어떤 형태로 이루어져 있는가? -->
+
+  <!-- 
+  여러형태의 이미지를 나열하는 형태이다. 
+  시안에는 이미지만 존재하지만 이미지 없어도 알아볼 수 있도록 설명을 적으면 더 좋을 듯 하다.
+
+  그럼 이미지와 설명을 같이 써야하는데 이때 적절한 시멘틱 태그는 
+  figure라고 생각한다.
+  -->
+
+
+  <!-- 이미지를 담을 태그 -->
+  <figure>
+
+    <!-- 스크린 리더 사용자를 위한 부가적인 설명 요소, 시각적으로 안보이게 구성함-->
+    <figcaption class="sr-only">접속 여부</figcaption>
+
+    <!-- 이미지 나열하기 위한 태그 -->
+    <ul>
+
+      <li>
+        <!-- img 최적화를 위해 미리 inline속성을 사용하여 이미지의 크기를 정함-->
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face1.jpg" alt="프로필 아이콘" />
+
+        <!-- aria-label를 사용해서 div의 역활을 표시, 접근을 class로 선언하여 나중에 개별적으로도 접근이 가능하게 만듬-->
+        <div class="Status" style="background-color: #dbdbdb;" aria-label="상태 정보"></div>
+      </li>
+
+      <li>
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face2.jpg" alt="프로필 아이콘" />
+        <div class="Status" style="background-color: #4cfe88;" aria-label="상태 정보"></div>
+      </li>
+
+      <li>
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face3.jpg" alt="프로필 아이콘" />
+        <div class="Status" style="background-color: #dbdbdb;" aria-label="상태 정보"></div>
+      </li>
+
+      <li>
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face4.jpg" alt="프로필 아이콘" />
+        <div class="Status" style="background-color: #4cfe88;" aria-label="상태 정보"></div>
+      </li>
+
+      <li>
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face5.jpg" alt="프로필 아이콘" />
+        <div class="Status" style="background-color: #4cfe88;" aria-label="상태 정보"></div>
+      </li>
+
+      <li>
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face6.jpg" alt="프로필 아이콘" />
+        <div class="Status" style="background-color: #4cfe88;" aria-label="상태 정보"></div>
+      </li>
+
+      <li>
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face7.jpg" alt="프로필 아이콘" />
+        <div class="Status" style="background-color: #dbdbdb;" aria-label="상태 정보"></div>
+      </li>
+
+      <li>
+        <img width="64" height="64" src="/src/avatars/src/avatars/images/face8.jpg" alt="프로필 아이콘" />
+        <div class="Status" style="background-color: #dbdbdb;" aria-label="상태 정보"></div>
+      </li>
+
+    </ul>
+
+
+  </figure>
+
+
+</body>
+
+</html>

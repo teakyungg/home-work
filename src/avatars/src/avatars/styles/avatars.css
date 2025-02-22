@@ -1,0 +1,47 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1;
+}
+
+figure {
+
+    width: 396px;
+    height: 195px;
+
+    padding: 50px;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+
+    /* 줄바꿈시 여백 문제로 여백 문제로 font-size를 0으로 변경 */
+    font-size: 0;
+
+
+    li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    img {
+        /* img태그를 block형태로 변경함으로써 width, height에 대한 크기를 재세팅 */
+        /* 이 부분이 없으면 "상태 정보" 아이콘이 내가 원하는 위치로 가지 않음 */
+        display: block;
+        padding: 10px;
+    }
+
+    .Status {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+
+        width: 17.78px;
+        height: 17.78px;
+
+        border-radius: 100%;
+    }
+
+}
