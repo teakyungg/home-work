@@ -9,3 +9,123 @@
     border: 0;
     clip: rect(0, 0, 0, 0);
 }
+
+:root {
+    --basic-font-color: #121212;
+    --basic-font-size: 16px;
+
+    /* --mobile-width: 48rem;  이거 안되네*/
+
+}
+
+body {
+    color: var(--basic-font-color);
+    font-size: var(--basic-font-size);
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+#login {
+
+    --input-color: .875rem;
+    --input-height: 2.8125rem;
+    --input-border-color: #dadada;
+    --input-backgrund-color: #fff;
+
+    --login-button-font-size: 1rem;
+    --login-button-height: 2.8125rem;
+    --login-button-color: #fff;
+    --login-button-backgound-color: #03cf5d;
+    --login-button-margin-top: 1.25rem;
+
+    --sub-margin-top: .625rem;
+
+
+
+
+
+    text-align: center;
+
+    /* 메인 로고 */
+    .logo {
+        margin-top: 4.375rem;
+    }
+
+    /* 입력창 */
+    .input-panel {
+
+        margin: 0 1.25rem;
+
+        .input-style {
+            width: 100%;
+
+            color: var(--input-color);
+            height: var(--input-height);
+            border: .0625rem solid var(--input-border-color);
+            background-color: var(--input-backgrund-color);
+
+            padding: .875rem;
+            box-sizing: border-box;
+        }
+
+        div:nth-child(2) {
+            margin-top: .625rem;
+        }
+
+        .login-button {
+
+            width: 100%;
+            height: var(--login-button-height);
+
+            margin-top: var(--login-button-margin-top);
+            font-size: var(--login-button-font-size);
+            color: var(--login-button-color);
+            background-color: var(--login-button-backgound-color);
+
+            padding: 0;
+            border: none;
+
+        }
+
+    }
+
+    .sub {
+
+        margin: var(--sub-margin-top) 1.25rem 0 1.25rem;
+
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+
+        @media(min-width:48rem) {
+            flex-flow: row nowrap;
+        }
+
+
+        .sub-style {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .login-status {
+            display: flex;
+            flex-flow: row nowrap;
+
+            gap: .625rem;
+        }
+
+        .ip-security {
+
+            display: none;
+
+            @media (min-width: 48rem) {
+                display: block;
+            }
+        }
+    }
+
+
+
+}
